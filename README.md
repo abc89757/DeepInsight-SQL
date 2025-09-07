@@ -40,7 +40,7 @@ DeepInsight-SQL 多智能体数据洞察平台是一个基于多智能体协作�
 
 借助该数据集，可以直观展示平台在 **自然语言 → SQL → 数据洞察** 流程中的完整能力。
 
-
+演示视频：
 
 ## 部署与使用
 
@@ -52,7 +52,7 @@ DeepInsight-SQL 多智能体数据洞察平台是一个基于多智能体协作�
    ```
 
 2. **安装依赖环境**
-    推荐使用 Conda 环境：
+    推荐使用 `Conda` 环境：
 
    ```
    conda env create -f environment.yml
@@ -61,7 +61,31 @@ DeepInsight-SQL 多智能体数据洞察平台是一个基于多智能体协作�
 
 3. **配置.env文件**
 
+   在主目录下的 `.env` 文件中配置 `MySQL` 链接参数以及` LLM` 的 `API_KEY`，例如：
+
+   ```
+   # MySQL 配置
+   MYSQL_HOST=127.0.0.1
+   MYSQL_PORT=3306
+   MYSQL_USER=root
+   MYSQL_PASSWORD=123456
+   MYSQL_DB=demo_data
+   MYSQL_CHARSET=utf8mb4
    
+   # LLM配置
+   DEEPSEEK_API_KEY="sk-xxxxx"
+   ```
+
+   - **MySQL 配置**：修改为你自己的数据库地址、用户名和密码，`MYSQL_DB` 为实际要使用的数据库名。
+   - **LLM 配置**：本项目默认使用 **DeepSeek v3** 模型，只需在 `DEEPSEEK_API_KEY` 中填入你的 `API Key` 即可。
+
+   如想更换其他模型，除更改 `API_KEY` 以外，还要修改 `Agents/Component` 文件夹下所有 `agent.py` 文件里的模型信息：
+
+   ```
+   model = LiteLlm(model="deepseek/deepseek-chat")
+   ```
+
+   具体请参考 `google adk` 的官方文档 [Agent Development Kit](https://google.github.io/adk-docs/)
 
 4. **启动所有服务**
     运行以下命令同时启动五个 MCP Server 和 ADK Web：
