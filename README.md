@@ -1,6 +1,8 @@
 # DeepInsight-SQL 多智能体数据洞察平台
 
-**英文：** DeepInsight-SQL: A Multi-Agent Text-to-SQL Insight Platform
+**DeepInsight-SQL: A Multi-Agent Text-to-SQL Insight Platform**
+
+![adk_logo](https://github.com/abc89757/DeepInsight-SQL/blob/main/asset/agent-development-kit.png)
 
 ## 项目介绍
 
@@ -35,6 +37,8 @@ DeepInsight-SQL 多智能体数据洞察平台是一个基于多智能体协作�
 
 
 ## 演示示例
+
+![example](https://github.com/abc89757/DeepInsight-SQL/blob/main/asset/example.png)
 
 该环节使用公开数据集进行功能验证，示例数据库来源： [Vehicle Sales Data (Kaggle)](https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data/data)
 
