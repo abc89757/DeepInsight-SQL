@@ -2,7 +2,7 @@
 
 **DeepInsight-SQL: A Multi-Agent Text-to-SQL Insight Platform**
 
-![adk_logo](https://github.com/abc89757/DeepInsight-SQL/blob/main/asset/agent-development-kit.png)
+![logo]([https://github.com/abc89757/DeepInsight-SQL/blob/main/asset/agent-development-kit.png](https://github.com/abc89757/DeepInsight-SQL/blob/main/asset/Logo.png))
 
 ## 项目介绍
 
